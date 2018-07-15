@@ -16,3 +16,14 @@ get '/about' do
     output  << "<p>This is my first Sinatra app.</p>"
     output
 end
+
+get '/form' do
+    form ='<form action="/form" method="post">'
+    form << '<input type="submit" value="Submit" />'
+    form << '</form>'
+    form
+end
+
+post '/form' do
+    "Thanks for submitting your form."
+end
