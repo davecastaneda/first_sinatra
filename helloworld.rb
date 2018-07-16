@@ -22,7 +22,7 @@ post '/form' do
     "Thanks for submitting your form."
 end
 
-get '/company/about-us' do
+get '/company/about' do
     output = "<h2>Sinatra</h2>"
     output  << "<p>This is my first Sinatra app.</p>"
     output
