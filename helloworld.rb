@@ -28,9 +28,9 @@ get '/company/about' do
     output
 end
 
-get /\A\/company\/[A-Za-z\-]+\Z/ do
-    "This route matches a Regex."
-end
+# get /\A\/company\/[A-Za-z\-]+\Z\/ do
+#     "This route matches a Regex."
+# end
 
 get '/company/*' do
     "This route catches everything else."
