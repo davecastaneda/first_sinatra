@@ -11,8 +11,6 @@ get '/goodbye' do
     "Goodbye world!"
 end
 
-
-
 get '/form' do
     form ='<form action="/form" method="post">'
     form << '<input type="submit" value="Submit" />'
@@ -24,7 +22,7 @@ post '/form' do
     "Thanks for submitting your form."
 end
 
-get '/company/about' do
+get '/company/about-us' do
     output = "<h2>Sinatra</h2>"
     output  << "<p>This is my first Sinatra app.</p>"
     output
