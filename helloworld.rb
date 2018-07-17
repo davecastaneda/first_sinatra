@@ -40,3 +40,7 @@ end
 get '/products/:id' do
     "Product ID is: #{params[:id]}"
 end
+
+get '/about' do
+    redirect('/company/about')
+end
